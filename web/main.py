@@ -1,14 +1,12 @@
 from flask import Flask
 from flaskext.mysql import MySQL
+from config import Config
 
 
 mysql = MySQL()
 app = Flask(__name__)
+app.config.from_object('Config')
 
-app.config['MYSQL_DATABASE_USER'] = 'MYUSER'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'MYPASSWORD'
-app.config['MYSQL_DATABASE_DB'] = 'mydb'
-app.config['MYSQL_DATABASE_HOST'] = 'MYDBHOST'
 mysql.init_app(app)
 
 @app.route("/message")
