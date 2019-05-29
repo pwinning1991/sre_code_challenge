@@ -1,9 +1,9 @@
 import os
 
+
 class Config:
+
     MYSQL_DATABASE_USER = os.getenv('MYSQL_DATABASE_USER')
     MYSQL_DATABASE_PASSWORD  = os.getenv('MYSQL_DATABASE_PASSWORD')
     MYSQL_DATABASE_DB  = os.getenv('MYSQL_DATABASE_DB')
     MYSQL_DATABASE_HOST  = os.getenv('MYSQL_DATABASE_HOST')
-
-

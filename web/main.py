@@ -5,7 +5,7 @@ from config import Config
 
 mysql = MySQL()
 app = Flask(__name__)
-app.config.from_object('Config')
+app.config.from_object(Config)
 
 mysql.init_app(app)
 
@@ -18,3 +18,4 @@ def message():
 
 if __name__ == "__main__":
     app.run()
+
