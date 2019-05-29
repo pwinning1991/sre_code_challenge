@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  flaskapp:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2019-05-28T21:36:48.127517-04:00"
+    description: A Helm chart for a Flaskapp with a mysql backend
+    digest: 1a3fd45257bbc6e0f3c090b765493f1c16a68ecb36f6b4252241b9a3590011c1
+    name: flaskapp
+    urls:
+    - flaskapp-0.1.0.tgz
+    version: 0.1.0
+generated: "2019-05-28T21:36:48.126263-04:00"
