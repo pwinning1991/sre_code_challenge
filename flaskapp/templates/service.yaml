@@ -4,11 +4,12 @@ metadata:
   name: {{ include "flaskapp.fullname" . }}
   labels:
 {{ include "flaskapp.labels" . | indent 4 }}
+  annotations:
+    {{- toYaml .Values.service.annotations | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:
     - port: {{ .Values.service.port }}
-      targetPort: {{ .Values.service.targetPort }}
       protocol: TCP
   selector:
     app.kubernetes.io/name: {{ include "flaskapp.name" . }}

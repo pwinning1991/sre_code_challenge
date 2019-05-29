@@ -17,9 +17,13 @@ nameOverride: ""
 fullnameOverride: ""
 
 service:
-  type: NodePort
-  port: 5000
+  type: LoadBalancer
+  port: 443
   targetPort: 5000
+  annotations:
+    #You Will need to add the arn of a AWS cert here
+    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: 
+
 
 ingress:
   enabled: false
