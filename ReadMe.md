@@ -12,6 +12,8 @@ I used a .env file and then just source it so it is not repetivtive
 5. MYSQL_ROOT_PASSWORD
 6. MYSQL_PORT='3306'
 
+This was created and tested with python 3.7.3, running docker-compose up once you have set the above environment variables should bring up both the db and front end flask app 
+
 ### For deploying to Kubernetetes 
 1. See the ReadMe in eks_init_scripts directory for bootstraping the cluster
 2. Change any values you want in the values.yaml within the flaskapp helm chart
