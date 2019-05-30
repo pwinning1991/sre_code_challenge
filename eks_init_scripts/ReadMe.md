@@ -16,6 +16,10 @@ kubectl apply -f storageclass.yaml
 ```bash
 kubectl apply -f rbac.yaml
 ```
+4. Now just create the tiller pod with
+```bash
+helm initialize --service-account tiller
+```
 You now should have a completey bootstraped EKS cluster ready to deply Helm charts to
 
 ### Note
