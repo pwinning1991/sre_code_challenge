@@ -18,7 +18,7 @@ I used a .env file and then just source it so it is not repetivtive
 + NOTE I removed the arn of my aws ssl cert(for security purposes)used for the loadbalancer in the helm chart so that would need to be added for the app to work
 3. Then you just need to deploy the application with helm
 ```shell
-helm install flask flaskapp
+helm install --name flask flaskapp
 ```
 ### Notes 
 + I left the ingress controller in the helm chart although it is currently unused, for the ability to scale to multiple micorservices in the future
