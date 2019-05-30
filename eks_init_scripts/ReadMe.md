@@ -17,3 +17,7 @@ kubectl apply -f storageclass.yaml
 kubectl apply -f rbac.yaml
 ```
 You now should have a completey bootstraped EKS cluster ready to deply Helm charts to
+
+### Note
+You will need aws-iam-authenticator installed to get the kube config to work when you bootstrap the cluster 
+Here is a link to the install directions [click me](https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html)
